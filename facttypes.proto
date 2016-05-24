@@ -1,0 +1,24 @@
+import "base.proto";
+import "facttypes_base.proto";
+
+message StrictName: NFactType.TFact 
+{ 
+    required string NameNotNorm = 1;
+    required string Firstname = 2 [ default = "None" ];
+    required string Lastname = 3 [ default = "None" ];
+    required string Patronymic = 4 [ default = "None" ];
+    required string Gender = 5 [ default = "dual" ];
+    required string Address = 6 [ default = "None" ];
+    required bool Descriptor = 7 [ default = false ];
+    required bool StrictNom = 8 [default = false];
+}
+
+message RawName: NFactType.TFact
+{
+    required string Name = 1;
+    required string Name_not_norm = 2;
+    optional bool Misc_check = 3;
+    optional bool Pers_check = 4;
+    optional bool BeNom = 5;
+    optional bool StrongNom = 6;
+}

@@ -1,0 +1,13 @@
+import "base.proto";     
+import "articles_base.proto";
+
+message names : TAuxDicArticle {}
+message east_sn : TAuxDicArticle {} 
+message stop : TAuxDicArticle {}
+message parts : TAuxDicArticle {}
+message role : TAuxDicArticle {}
+message adjplace : TAuxDicArticle {}
+message places : TAuxDicArticle {}
+message normnames : TAuxDicArticle {}
+message address : TAuxDicArticle {}
+message org : TAuxDicArticle {}

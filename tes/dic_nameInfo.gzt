@@ -1,0 +1,56 @@
+encoding "utf-8";
+
+names "names"{
+  key = {"names.txt"  type=FILE}
+}
+
+names "strange_names"{
+  key = {"!сулим" | "!сулима" | "!сулиму" | "!сулиме" | "!сулимой" | "!сулимы"}
+  lemma = {"!сулим"}
+}
+
+east_sn "east_sn" {
+  key = {"sn_east.txt" type=FILE}
+}
+
+east_sn "danger_east_sn" {
+  key = {"ли" | "о" | "со" | "у"}
+}
+
+names {
+  key = {"!сами"}
+  lemma = {"сами"}
+}
+
+address "addressMale"{
+  key = {"addressMale.txt" type=FILE}
+}
+
+address "addressFemale" {
+  key = {"addressFemale.txt" type=FILE}
+}
+
+address "addressDual" {
+  key = {"addressDual.txt" type=FILE}
+}
+
+address "addressFemale_ledi"{
+  key = "леди"|"ледя" 
+  lemma = "леди"  
+} 
+
+role "roleMale" {
+  key = {"roleMale.txt" type=FILE}
+}
+
+role "roleFeale" {
+  key = {"roleFemale.txt" type=FILE}
+}
+
+role "roleDual" {
+  key = {"roleDual.txt" type=FILE}
+}
+
+parts "nob_part"{
+  key = {"nob_part.txt" type = FILE}
+}

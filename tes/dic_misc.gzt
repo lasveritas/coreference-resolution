@@ -1,0 +1,31 @@
+encoding "utf-8";
+
+stop "misc"{
+  key = {"misc.txt" type = FILE}
+}	
+
+stop "not_descr" {
+  key = {"после"}
+}
+
+stop "countries"{
+  key = {"geo.txt" type=FILE}
+  key = {"коста рика"}
+  key = {"эль сальвадор"}
+  
+}
+
+stop {
+  key = "роскосмос" | "роскосмоса";
+}
+
+stop "names_not"{
+  key = "тем" | "прошу" | "тема" | "господи" | "дай" | "дая" | "из" | "иза" | "нет" | "спасибо" | "меня" | "мень" | "увы" | "мир" | "день" | "президент" | "туркмен-баш" | "леда"
+  key = {"stopwords.txt" type=FILE}
+}
+
+
+
+stop "hyph" {
+  key = "-" | "—" | "\""; 
+}
