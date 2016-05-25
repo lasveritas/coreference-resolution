@@ -10,4 +10,4 @@
 Директория learn содержит скрипты для обучения вектора весов.
 
 Материалы соревнования factRuEval находятся по адресу https://github.com/dialogue-evaluation/factRuEval-2016.
-
+Код Томита-парсера и инструкции по установке доступны по адресу https://github.com/yandex/tomita-parser.
